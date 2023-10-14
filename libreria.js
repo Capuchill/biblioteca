@@ -78,6 +78,7 @@ function agregarLibro() {
         d.getElementById('publicacion').value = '';
         d.getElementById('autor').value = '';
         d.getElementById('portada').value = '';
+   
     } else {
         alert('Por favor, complete todos los campos.');
     }
@@ -93,7 +94,7 @@ function mostrarLibros() {//aca?
         const libro = libreria[i];//tomar prestado el indice del array, o hacemos referencia a un libro de la libreria
        
         if(libreria[i].disponible == "No"){
-            listaLibros.innerHTML+=`<div class="card_container">
+            listaLibros.innerHTML += `<div class="card_container">
             <article class="card_article">
             <img src="${libro.portada}" class="card_img">
             <div class="card_data">
